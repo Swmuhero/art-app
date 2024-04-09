@@ -1,0 +1,134 @@
+/* Global reset and base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background: url(dark-color-02-920x518.jpg) center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Wrapper styles */
+.wrapper {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Option styles */
+.option {
+    margin-bottom: 20px;
+}
+
+.opt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+/* Button styles */
+button {
+    background-color: #43a047;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Color input styles */
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Range input styles */
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none; /* Broad browser support */
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s; /* Smooth transition */
+}
+
+/* Thumb and track styles for webkit */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; /* Broad browser support */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #d3d3d3;
+    border-radius: 5px;
+}
+
+/* Thumb styles for Mozilla */
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #43a047;
+    cursor: pointer;
+}
+
+/* Grid container styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 32.5px);
+    grid-auto-rows: 30px;
+    gap: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Grid column styles */
+/* Grid column styles */
+.gridCol {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc; /* Added border */
+}
+
+.gridCol:hover {
+    background: url(OIP.jpg) center center/cover;
+}
